@@ -1,0 +1,74 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+img {
+    size: 100px;
+}
+header nav ul li {
+  margin: 20px 0;
+}
+ul {
+    list-style: none;
+  }
+div {
+  width: 1240px;
+  margin: 50 auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  flex-basis: 100px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+
+header nav ul li a:hover:after {
+  transform: translate(0, 0);
+}
+header ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+header {
+  background-color: rgba(185, 40, 40, 0.548);
+  border-radius: 16px;
+}
+aside {
+  background-color: #b3b2b29d;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.16);
+  border-radius:16px;
+  padding: 9px;
+  overflow: hidden scroll;
+  flex-basis: 1000px;
+}
+footer{
+  width: 100%;
+  background-color: #e45757c4;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px 20px;
+    margin-top: 150px;
+    position: fixed;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+  }
